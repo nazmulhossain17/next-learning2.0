@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
+import './Header.css'
 
 const Header = () => {
     return (
         <div>
-            <Navbar bg="secondary" expand="lg">
+            <Navbar className='ba' expand="lg">
       <Container fluid>
         <Navbar.Brand className='text-light p-2 m-2' href="#"><h2>Next-Learning 2.0</h2></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

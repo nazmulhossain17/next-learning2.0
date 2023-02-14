@@ -13,17 +13,64 @@
 .content{
     margin-left: 5%;
     margin-top: -27%;
+    
 }
 
 .content h1{
-    font-size: 40px;
-    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c,
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c,
+    0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+  animation: blink 4s infinite alternate;
     font-weight: bold;
 }
 
 .content p{
-    font-size: 13px;
+    font-size: 23px;
     margin-left: 20px;
     margin-top: -20px;
     color: white;
 }
+
+.by{
+    border-radius: 4px;
+    background-color: #0f2025;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 17px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+    
+}
+
+.by span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.by span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .by:hover span {
+    padding-right: 25px;
+  }
+  
+  .by:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

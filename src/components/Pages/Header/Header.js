@@ -41,8 +41,8 @@ const Header = () => {
             />
             
           </Form> */}
-          <Button variant="info" className='m-2'>Sign Up</Button>
-          <Button variant="success">Sign In</Button>
+          <Button variant="info" className='m-2 btn-lg'>Sign Up</Button>
+          <Button variant="success" className='btn-lg'>Sign In</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

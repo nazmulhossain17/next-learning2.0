@@ -1,19 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Pages/Header/Header';
-import Started from './components/Pages/Started/Started';
-import Students from './components/Pages/Students/Students';
-import Cdetails from './components/Pages/Cdetails/Cdetails';
-import Footer from './components/Pages/Footer/Footer';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Main from './layout/Main';
+import Home from './components/Pages/Home/Home';
+import Courses from './components/Courses/Courses';
+import SignIn from './components/SignIn/SignIn';
+import Signup from './components/SignUp/Signup';
+
+const router = createBrowserRouter([
+  {
+  path: '/',
+  element: <Main></Main>,
+  children: [
+    {
+        path: '/',
+        element: <Home></Home>
+    },
+    {
+      path: '/courses',
+      element: <Courses></Courses>
+    },
+    {
+      path: '/signin',
+      element: <SignIn></SignIn>
+    },
+    {
+      path: '/signup',
+      element: <Signup></Signup>
+    }
+  ]
+  }
+])
 
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <Started/>
-     <Students/>
-     <Cdetails/>
-     <Footer/>
+          <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }

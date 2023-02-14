@@ -9,26 +9,7 @@ const Footer = () => {
       <span>Get connected with us on social networks:</span>
     </div>
 
-    <div>
-      <a href="" class="me-4 text-reset">facebook
-        {/* <i class="fab fa-facebook-f"></i> */}
-      </a>
-      <a href="" class="me-4 text-reset">twitter
-        {/* <i class="fab fa-twitter"></i> */}
-      </a>
-      <a href="" class="me-4 text-reset">google
-        {/* <i class="fab fa-google"></i> */}
-      </a>
-      <a href="" class="me-4 text-reset">instagram
-        {/* <i class="fab fa-instagram"></i> */}
-      </a>
-      <a href="" class="me-4 text-reset">linkedin
-        {/* <i class="fab fa-linkedin"></i> */}
-      </a>
-      <a href="" class="me-4 text-reset">github
-        {/* <i class="fab fa-github"></i> */}
-      </a>
-    </div>
+   
   </section>
 
   <section class="">

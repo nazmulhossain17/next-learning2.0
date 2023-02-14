@@ -9,38 +9,29 @@ const Students = () => {
   <div className="card m-2">
     <img src="https://images.unsplash.com/photo-1573166364524-d9dbfd8bbf83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" className="card-img-top" alt="Hollywood Sign on The Hill"/>
     <div className="card-body">
-      <h5 className="card-title">Card title</h5>
+      <h5 className="card-title">Rob Percival</h5>
       <p className="card-text">
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+      He provides hours of content in coding. You can sign up for Python, Node.js, web design, React, Next.js, and complete a web developer course. He also leads courses in machine learning and TensorFlow. Being one of the founders of academy, his courses attract several students. 
       </p>
-      <p className="card-text">
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </p>
+    
     </div>
   </div>
   <div className="card m-2">
     <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="card-img-top" alt="Palm Springs Road"/>
     <div className="card-body">
-      <h5 className="card-title">Card title</h5>
-      <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p className="card-text">
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </p>
+      <h5 className="card-title">Jose Portilla</h5>
+      <p className="card-text">He is one of top instructors and has taught over 1,111,820 students in total. These students have gone through Java, Python, data structures, Java EE, android development, and C#. His extensive background in software development for forty years increases his popularity amongst students.</p>
+    
     </div>
   </div>
   <div className="card m-2">
     <img src="https://images.unsplash.com/photo-1534030422872-13302ecaefa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" className="card-img-top" alt="Los Angeles Skyscrapers"/>
     <div className="card-body">
-      <h5 className="card-title">Card title</h5>
+      <h5 className="card-title">Phil Ebiner</h5>
       <p className="card-text">
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to show
-        that equal height action.
+      He has taught over 1,299,122 students so far. He provides premium courses in JavaScript, Node.js, CSS, and web design. There are over 278,810 reviews proclaiming the high-quality courses he provides. Overall, the expert instructor has achieved a high rating of 4.7.
       </p>
-      <p className="card-text">
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </p>
+   
     </div>
     
   </div>
@@ -96,8 +87,9 @@ const Students = () => {
         </div>
       </div>
     </div>
+    
   </div>
- 
+ <br/>
   
 </div>
         </div>

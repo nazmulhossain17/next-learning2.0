@@ -19,16 +19,13 @@ const Header = () => {
             <Link className='text-decoration-none' to='/'><Nav.Link href="#action1" className='text-light'><b>Home</b></Nav.Link></Link>
             <Link className='text-decoration-none' to='/courses'><Nav.Link href="#action2" className='text-light'>Courses</Nav.Link></Link>
             
-          
-            <Nav.Link href="#" className='text-light'>
-              About Us
-            </Nav.Link>
-            <Nav.Link href="#" className='text-light'>
+            <Link className='text-decoration-none' to='/about'><Nav.Link href="#action3" className='text-light'>About Us</Nav.Link></Link>
+            <Link className='text-decoration-none' to='/blog'><Nav.Link href="#action4" className='text-light'>
                Blog
-            </Nav.Link>
-            <Nav.Link href="#" className='text-light'>
+            </Nav.Link></Link>
+            <Link className='text-decoration-none' to='/contact'><Nav.Link href="#action5" className='text-light'>
               Contact us
-            </Nav.Link>
+            </Nav.Link></Link>
           </Nav>
          
           

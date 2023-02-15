@@ -39,7 +39,7 @@ const Header = () => {
             
           </Form> */}
           <Link to='/signup'><Button variant="primary" className='m-2 btn-lg text-light'>Sign Up</Button></Link>
-          <Link to='/signin'><Button variant="success" className='btn-lg'>Sign In</Button></Link>
+          <Link to='/login'><Button variant="success" className='btn-lg'>Log In</Button></Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

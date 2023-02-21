@@ -7,6 +7,9 @@ import './Courses.css';
 const Courses = () => {
     const data = useLoaderData()
     console.log(data)
+    const handleAdd = () =>{
+        console.log('added')
+    }
     return (
         <div>
             <h1>Courses : {data[0]?.length}</h1>
@@ -17,6 +20,7 @@ const Courses = () => {
                 data[0]?.map(nse => <Cdetails 
                 key={nse.id} 
                 nse={nse}
+                handleAdd={handleAdd}
                 ></Cdetails>)
             }
             </div>

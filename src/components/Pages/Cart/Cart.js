@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './Cart.css';
 
 const Cart = () => {
@@ -10,7 +11,7 @@ const Cart = () => {
         <p>Total Shipping: $</p>
         <p>Tax:</p>
         <h5>Grand Total: </h5>
-        <button>Clear Cart</button>
+        <Button variant='outline-danger'>Clear Cart</Button>
         
     </div>
     );

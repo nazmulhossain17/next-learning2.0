@@ -3,12 +3,12 @@ import { Button, Card, CardGroup, Image } from 'react-bootstrap';
 import { FaEye, FaRegBookmark, FaShareAlt, FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Cdetails = ({nse}) => {
+const Cdetails = ({nse, handleAdd}) => {
     const {name, img, description, seller, price, ratings, id} = nse;
     // console.log(nse)
     return (
         <div>
-        <Link className='text-decoration-none text-dark' to='/'><Card className="mb-5">
+      <Card className="mb-5">
       <Card.Header className='d-flex justify-content-between align-items-center'> 
             <div className='d-flex'>
             
@@ -32,14 +32,13 @@ const Cdetails = ({nse}) => {
       <Card.Footer className="d-flex justify-content-between">
         
         <div className='d-flex'>
-        <Button variant="outline-info" size="lg">
+        <Button onClick={handleAdd} variant="outline-info" size="lg">
         Buy Now
       </Button>
       <h4 className='ms-5'>Price: ${price}</h4>
         </div>
       </Card.Footer>
     </Card>
-    </Link>
     </div>
     );
 };

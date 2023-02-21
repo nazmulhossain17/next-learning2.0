@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Started.css';
 
 const Started = () => {
@@ -9,7 +10,7 @@ const Started = () => {
         <div className='content'>
             <h1>Welcome to Next-Learning Platform</h1><br/>
             <p>Instructors from around the world teach millions of students on Next-Learning 2.0.<br/> Start, switch, or advance your career, Professional Certificates, and degrees from<br/> world-class universities and companies. We provide the tools and skills to teach what you love.</p>
-            <button className='by'><span>Join Now</span></button>
+            <button className='by'><span><Link className='text-decoration-none' to='/courses'>Join Now</Link></span></button>
         </div>
         <br/>
         <br/>

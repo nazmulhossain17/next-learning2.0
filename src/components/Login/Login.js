@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { FaGoogle } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../context/UserContext';
 
 const Login = () => {
+  const {signIn} = useContext(AuthContext)
+  const navigate = useNavigate()
     const handleLogin = event =>{
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password)
+
+       signIn(email, password)
+      .then(result =>{
+        const user = result.user;
+        console.log(user);
+        form.reset();
+        navigate('/blog')
+    })
+    .catch(error =>{
+        console.error(error)
+    })
     }
     return (
         <div className='m-4'>
